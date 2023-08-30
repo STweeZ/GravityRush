@@ -1,0 +1,230 @@
+/* Ici, votre style sera écrit */
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+#header{
+    z-index: 500;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all ease;
+}
+#container_header {
+    height: 100%;
+    width: 73%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.logo{
+    height: auto;
+    width: 100px;
+}
+#logo_container {
+    height: 45px;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/logo/logo.png");
+}
+.liens{
+    right: -17%;
+    position: absolute;
+    margin-left: 17%;
+    width: 85%;
+    height:100%;
+    display: flex;
+}
+.container_liens{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.lien_menu{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    text-align:right;
+
+}
+.lien_profil{
+    justify-content: center;
+}
+
+.lien_user{
+    height: 2vh;
+    width: 2vh;
+    border-radius: 500px;
+    background-image: url("../img/user/user.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*** Login Page ***/
+
+#container_form{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/background/robot.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#content_form {
+    position: absolute;
+    top: 0;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 73%;
+    display: flex;
+    align-items: center;
+
+}
+
+#form_login{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#email{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px black;
+    color: black;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#email:hover{
+    width: 110%;
+}
+#email:focus{
+    width: 110%;
+}
+
+#password{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px black;
+    color: black;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#password:hover{
+    width: 110%;
+}
+#password:focus{
+    width: 110%;
+}
+.btn_login{
+    width: 48%;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    padding: 2% 2%;
+    color: black;
+    mix-blend-mode:screen ;
+    transition: 0.2s all ease;
+    cursor: pointer;
+    margin-bottom: 5vh;
+}
+
+.btn_login:hover{
+    width: 52%;
+}
+
+#inscription{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+#inscription a{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: black;
+    text-decoration: underline;
+}
+
+#password-confirm{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px black;
+    color: black;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#password-confirm:hover{
+    width: 110%;
+}
+#password-confirm:focus{
+    width: 110%;
+}
+
+#name{
+    width: 100%;
+    margin-bottom: 5vh;
+    background: inherit;
+    border: none;
+    border-bottom: solid 2px black;
+    color: black;
+    padding: 1% 2%;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all ease;
+}
+#name:hover{
+    width: 110%;
+}
+#name:focus{
+    width: 110%;
+}
+#container_scroll{
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    transform-origin: left;
+}
+#txt_scroll{
+    color: black;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    font-size: 15px;
+}
